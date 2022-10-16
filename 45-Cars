@@ -1,0 +1,77 @@
+function carInfo(manufacturer, model, ...optional) {
+  let makeCar = {
+    manufacturer,
+    model,
+    ...optional,
+  };
+  return makeCar;
+}
+
+let HondaCivic = carInfo("Honda", "Civic", (color = "Black"), (year = 2022));
+let ToyotaCorolla = carInfo("Toyota", "Corolla", (year = 2022), (color = "White"));
+let SuzukiAlto = carInfo("Suzuki", "Alto", (year = 2022));
+console.log(HondaCivic);
+console.log(ToyotaCorolla);
+console.log(SuzukiAlto);
+//////////////////////////////////////////////////////////////////////////////////
+// //////////////Method 2//////////////////////
+function carInfo1(manufacturer, model, ...optional) {
+  let makeCar = {
+    manufacturer,
+    model,
+    color: optional[0],
+    year: optional[1],
+  };
+  return makeCar;
+}
+
+let hondaAccord1 = carInfo1(
+  "Honda",
+  "Civic",
+  (color = "Black"),
+  (year = 2022)
+);
+let ToyotaCorolla1 = carInfo1(
+  "Toyota",
+  "Corolla",
+  (color = "White"),
+  (year = 2022)
+);
+let SuzukiAlto1 = carInfo1("Suzuki", "Alto", (color = null), (year = 2022));
+console.log(HondaCivic);
+console.log(ToyotaCorolla1);
+console.log(SuzukiAlto1);
+////////////////////////////////////////
+///////////////////////////////////////
+// Method 3
+function carInfo3(manufacturer, model, ...optional) {
+  let makeCar = {
+    manufacturer,
+    model,
+  };
+  optional.forEach((list) => {
+    makeCar = { ...makeCar, ...list };
+  });
+  // You can use for loop also as this way
+  // for (let i = 0; i < optional.length; i++) {
+  //   makeCar = { ...makeCar, ...optional[i] };
+  // }
+  return makeCar;
+}
+
+let HondaCivic3 = carInfo3(
+  "Honda",
+  "Civic",
+  { color: "Black" },
+  { year: 2022 }
+);
+let ToyotaCorolla3 = carInfo3(
+  "Toyota",
+  "Corolla",
+  { color: "White" },
+  { year: 2022 }
+);
+let SuzukiAlto3 = carInfo3("Suzuki", "Alto", { year: 2022 });
+console.log(HondaCivic3);
+console.log(ToyotaCorolla3);
+console.log(SuzukiAlto3);

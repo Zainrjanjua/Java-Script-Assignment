@@ -1,0 +1,10 @@
+function makeSandwiches(...items) {
+  for (let i = 0; i < items.length; i++) {
+    console.log(`Adding ${items[i]} to Your Sandwich`);
+  }
+  console.log(`Your sandwich is Ready`);
+  console.log(`------------------------`);
+}
+makeSandwiches("Roasted Chicken");
+makeSandwiches("Sausages", "Sauce", "Vegetables");
+makeSandwiches("Peanut", "Butter");

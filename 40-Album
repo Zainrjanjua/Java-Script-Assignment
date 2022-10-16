@@ -1,0 +1,12 @@
+function make_album(artist, album, tracks = 0) {
+  let albumDectionary = {
+    artist,
+    album,
+    tracks,
+  };
+  return albumDectionary;
+}
+console.log(make_album("Hardy Sandhu", "Yaar Ni Milyaa"));
+console.log(make_album("Farhan Saeed", "Ye jo halka halka suroor ha"));
+console.log(make_album("Masroor Ali Khan", "Qurban Ost"));
+console.log(make_album("Arijit Singh", "Channa Mereya", 9));

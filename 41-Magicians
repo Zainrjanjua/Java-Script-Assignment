@@ -1,0 +1,7 @@
+let magicians = ["Calvin", "Martin", "Andy", "Kevin"];
+function show_magicians(magiciansNames) {
+  magiciansNames.map((item) => {
+    console.log(item);
+  });
+}
+show_magicians(magicians);

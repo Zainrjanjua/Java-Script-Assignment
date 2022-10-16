@@ -1,0 +1,42 @@
+let myName = "Zain";
+let age = 25;
+let height = 170;
+let nationality = "Pakistani";
+let city = "Rawalpindi";
+let friend = ["Farhan", "Ali", "Mahad"];
+let hobby = "Swimming";
+let favFood = "Fast Food";
+let favgame = "Cards";
+let favPlayer = "Shahid Afridi";
+
+// • Tests for equality and inequality with strings
+let nameTest = myName == "Zain" ? true : false;
+// Tests using the lower case function
+let nationalityTest = nationality == "Pakistani" ? true : false;
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+let ageTest = age === 24 ? true : false;
+let ageTest1 = age === 25 ? true : false;
+let ageTest2 = age > 25 ? true : false;
+let ageTest3 = age < 25 ? true : false;
+let ageTest4 = age >= 25 ? true : false;
+let ageTest5 = age <= 25 ? true : false;
+
+// Tests using "and" and "or" operators
+let heightTest = height === 170 || 171 ? true : false;
+let heightTest1 = height === 182 && age === 26 ? true : false;
+// Test whether an item is in a array
+let friendTest = friend.includes("Farhan") ? true : false;
+// Test whether an item is not in a array
+let friendTest1 = !friend.includes("Farhan") ? true : false;
+
+console.log(nameTest);
+console.log(ageTest);
+console.log(ageTest1);
+console.log(ageTest2);
+console.log(ageTest3);
+console.log(ageTest4);
+console.log(heightTest);
+console.log(heightTest1);
+console.log(nationalityTest);
+console.log(friendTest);
+console.log(friendTest1);

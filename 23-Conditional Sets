@@ -1,0 +1,33 @@
+// Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+let myName = "Zain";
+let age = 25;
+let height = 170;
+let nationality = "Pakistani";
+let city = "Rawalpindi";
+let friend = "Farhan";
+let hobby = "Swimming";
+let favFood = "Fast Food";
+let favgame = "Cards";
+let favPlayer = "Shahid Afridi";
+
+let nameTest = myName == "Zain" ? true : false;
+let ageTest = age == 25 ? true : false;
+let heightTest = height == 170 ? true : false;
+let nationalityTest = nationality == "Pakistani" ? true : false;
+let cityTest = city == "Rawalpindi" ? true : false;
+let friendTest = friend == "Ahmed" ? true : false;
+let hobbyTest = hobby == "Writting" ? true : false;
+let favFoodTest = favFood == "Chicken karahi" ? true : false;
+let favgameTest = favgame == "Ludo" ? true : false;
+let favPlayerTest = favPlayer == "Shoaib Akhter" ? true : false;
+
+console.log(nameTest);
+console.log(ageTest);
+console.log(heightTest);
+console.log(nationalityTest);
+console.log(cityTest);
+console.log(friendTest);
+console.log(hobbyTest);
+console.log(favFoodTest);
+console.log(favgameTest);
+console.log(favPlayerTest);

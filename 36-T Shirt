@@ -1,0 +1,8 @@
+function make_shirt(size, text) {
+  console.log(
+    `Your shirt size is ${size} and this message will be printed on it "${text}"  `
+  );
+}
+make_shirt("L", "i love javascript");
+make_shirt("M", "i love python");
+make_shirt("S", "i love typescript");

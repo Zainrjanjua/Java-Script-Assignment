@@ -1,0 +1,38 @@
+let alien_colour = "green";
+if (alien_colour == "green") {
+  // If the alien is green, print a message that the player earned 5 points.
+  console.log("Player just eraned 5 points for shooting the alien");
+} else if (alien_colour == "yellow") {
+  // If the alien is yellow, print a message that the player earned 10 points.
+  console.log("player just earned 10 points");
+} else if (alien_colour == "red") {
+  // If the alien is red, print a message that the player earned 15 points.
+  console.log("player just earned 15 points");
+}
+
+// Write three versions of this program, making sure each message is printed for the appropriate color alien.
+// version 2
+alien_colour = "yellow";
+if (alien_colour == "green") {
+  // If the alien is green, print a message that the player earned 5 points.
+  console.log("Player just eraned 5 points for shooting the alien");
+} else if (alien_colour == "yellow") {
+  // If the alien is yellow, print a message that the player earned 10 points.
+  console.log("player just earned 10 points");
+} else if (alien_colour == "red") {
+  // If the alien is red, print a message that the player earned 15 points.
+  console.log("player just earned 15 points");
+}
+
+// version 3
+alien_colour = "red";
+if (alien_colour == "green") {
+  // If the alien is green, print a message that the player earned 5 points.
+  console.log("Player just eraned 5 points for shooting the alien");
+} else if (alien_colour == "yellow") {
+  // If the alien is yellow, print a message that the player earned 10 points.
+  console.log("player just earned 10 points");
+} else if (alien_colour == "red") {
+  // If the alien is red, print a message that the player earned 15 points.
+  console.log("player just earned 15 points");
+}
